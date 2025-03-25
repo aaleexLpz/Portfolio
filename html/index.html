@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | DevAlex</title>
     <link rel="stylesheet" href="../css/indexStyles.css">
-    <link rel="shortcut icon" href="./images/favicon-DA.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/favicon-DA.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <div id="contenedorNavBar">
         <div id="contenedorTitulo">
-            <a href="" id="linkTitulo"><h2>DevAlex</h2></a>
+            <a href="index.html" id="linkTitulo"><h2>DevAlex</h2></a>
         </div>
         <div id="NavBar">
             <a href="" class="opcionNavBar">Sobre mí</a>
@@ -26,9 +26,14 @@
         <h1 id="tituloFullstack">FullStack Developer</h1>
         <h1 id="tituloNombre">Alejandro López</h1>
     </div>
+    <div id="contenedorBotones">
+        <button id="botonGithub"><img src="./icons/github-icon.png" alt="" class="iconoBoton"><a href="https://github.com/aaleexLpz" class="enlaceBoton" target="_blank">GitHub</a></button>
+        <button id="botonLinkedin"><img src="./icons/linkedin-icon.png" alt="" class="iconoBoton"><a href="https://www.linkedin.com/in/alejandro-l%C3%B3pez-carro-4a10a831b/" target="_blank" class="enlaceBoton">LinkedIn</a></button>
+        <button id="botonDescarga"><img src="./icons/download-icon.png" alt="" class="iconoBoton"><a href="./downloadable archives/CV Alejandro López.pdf" download class="enlaceBoton">Descargar CV</a></button>
+    </div>
     <div id="contenedorInfoPrincipal">
-        <div>
-            <img src="./images/FotoAlex.jpeg" alt="" id="imagenAlex">
+        <div id="contenedorFoto">
+            <img src="./images/FotoAlex.jpeg" alt="Fotografía identificativa Alejandro López" id="imagenAlex">
         </div>
         <div id="parrafoTexto">
             <p>
@@ -41,6 +46,45 @@
                 Soy programador fullstack, pero tengo tendencia a centrarme en el FrontEnd, aunque siempre estoy dispuesto a aprender y trabajar en nuevos ámbitos, con el fin de mejorar y optar a nuevas oportunidades.
             </p>
         </div>
+        <div id="contenedorMasInformacion">
+            <img src="./icons/flecha-abajo-icon.png" alt="Icono de una flecha blanca hacia abajo" id="iconoFlechaMasInfo">
+            <div id="masInfoTxt">
+                Más información
+            </div>
+        </div>
+    </div>
+    <div id="divSeparador"></div>
+    <h2 id="tecnologiasAprendidas">Tecnologías aprendidas</h2>
+    <p id="textoTecnologias">Estas son las tecnologías que he aprendido gracias a mi formación y a mis proyectos personales</p>
+    <div id="contenedorTecnologias">
+        <div class="cuadroTecnologia">
+            <h3>BackEnd</h3>
+            <div class="tecnologias" id="backend">
+                <img src="./icons/java-icon.png" alt="">
+                <img src="./icons/csharp-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="cuadroTecnologia">
+            <h3>FrontEnd</h3>
+            <div class="tecnologias" id="frontend">
+                <img src="./icons/html5-icon.png" alt="">
+                <img src="./icons/css3-icon.png" alt="">
+                <img src="./icons/js-icon.png" alt="">
+            </div>
+        </div>
+        <div class="cuadroTecnologia">
+            <h3>Frameworks</h3>
+            <div class="tecnologias" id="frameworks">
+                <img src="./icons/spring-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="cuadroTecnologia">
+            <h3>Tecnologías</h3>
+            <div class="tecnologias" id="controlVersiones">
+                <img src="./icons/github-icon.png" alt="">
+            </div>
+        </div>
+        
     </div>
 
 

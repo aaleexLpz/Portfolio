@@ -3,8 +3,10 @@
 }
 
 body {
-    background: linear-gradient(to right, #0D0F2E -20%, #1F2377 150%);
+    background: linear-gradient(to right, #0D0F2E -20%, #1F2377 120%);
     margin: 0 auto;
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease-in-out infinite;
 }
 
 #contenedorNavBar {
@@ -14,11 +16,11 @@ body {
     height: fit-content;
     margin-top: 0vh;
     background-color: #0a0a1c62;
-    position: fixed; /* Fija el contenedor en la parte superior */
-    top: 0; /* Asegura que se quede en la parte superior */
-    left: 0; /* Se asegura que se quede alineado al borde izquierdo */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
-    z-index: 1000; /* Asegura que el contenedor esté por encima de otros elementos */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
 }
 
 #contenedorTitulo {
@@ -82,16 +84,21 @@ h2 {
     font-size: 45pt;
 }
 
+#contenedorFoto {
+    width: fit-content;
+    margin-left: 10vw;
+}
+
 #imagenAlex {
     width: 150px;
-    border-radius: 300px;
-    border: 4px solid white;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 #contenedorInfoPrincipal {
     margin: 0 auto;
+    margin-left: 17vw;
     width: fit-content;
-    /* border: 1px solid white; */
     display: grid;
     grid-template-columns: 30% 70%;
     justify-content: center;
@@ -105,4 +112,210 @@ h2 {
     line-height: 3vh;
     font-size: 16pt;
     margin-left: -2vw;
+}
+
+#contenedorBotones {
+    margin-left: 35vw;
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+#contenedorBotones button {
+    padding: 0 20px;
+}
+
+#botonGithub {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    margin-right: 50px;
+    border-radius: 6px;
+    background-color: #575757;
+    border-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+#botonGithub:hover {
+    transform: translateY(-1px) scale(1.03); 
+    cursor: pointer;
+}
+
+#botonGithub:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+#botonLinkedin {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    margin-right: 50px;
+    border-radius: 6px;
+    background-color: #003cff;
+    border-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+#botonLinkedin:hover {
+    transform: translateY(-1px) scale(1.03); 
+    cursor: pointer;
+}
+
+#botonLinkedin:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+#botonDescarga {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    border-radius: 6px;
+    background-color: #27b82e;
+    border-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+#botonDescarga:hover {
+    transform: translateY(-1px) scale(1.03); 
+    cursor: pointer;
+}
+
+#botonDescarga:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.iconoBoton {
+    width: 27px;
+}
+
+.enlaceBoton {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+#contenedorMasInformacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 28vw;
+    margin-top: 10vh;
+    width: 10vw;
+    padding-bottom: 60px;
+}
+
+#iconoFlechaMasInfo {
+    width: 30px;
+    animation: bounce 2s infinite;
+}
+
+#masInfoTxt {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+#divSeparador {
+    min-height: 80px;
+}
+
+#tecnologiasAprendidas {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#textoTecnologias {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 16pt;
+    width: 30%;
+}
+
+#contenedorTecnologias {
+    margin: auto;
+    width: 50%;
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 10vh;
+}
+
+#contenedorTecnologias img {
+    display: flex;
+    gap: 20px;
+    width: 100px;
+}
+
+#contenedorTecnologias h3 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#backend {
+    border-radius: 10px;
+    background-color: #0d0f2eb9;
+}
+
+#frontend {
+    border-radius: 10px;
+    background-color: #0d0f2eb9;
+}
+
+#frameworks {
+    border-radius: 10px;
+    background-color: #0d0f2eb9;
+}
+
+#controlVersiones {
+    border-radius: 10px;
+    background-color: #0d0f2eb9;
+}
+
+.cuadroTecnologia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologias {
+    border: 3px solid rgb(94, 164, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 5px);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
 }
