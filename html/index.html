@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | DevAlex</title>
     <link rel="stylesheet" href="../css/indexStyles.css">
+    <link rel="stylesheet" href="../css/mediaIndexStyles.css">
     <link rel="shortcut icon" href="./icons/favicon-DA.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+    <!-- NavBar para escritorio -->
     <div id="contenedorNavBar">
         <div id="contenedorTitulo">
             <a href="index.html" id="linkTitulo"><h2>DevAlex</h2></a>
@@ -20,6 +22,20 @@
             <a href="" class="opcionNavBar">Sobre mí</a>
             <a href="" class="opcionNavBar">Formación</a>
             <a href="" class="opcionNavBar">Contacto</a>
+        </div>
+    </div>
+
+    <!-- NavBar para móvil -->
+    <div id="contenedorNavBarMovil">
+        <div id="contenedorTituloMovil">
+            <div id="menuToggle" class="menuToggle"><img src="./icons/menu-icon.png" alt="" id="iconoMenu"></div>
+            <a href="index.html" id="linkTituloMovil"><h2 id="tituloDevAlex">DevAlex</h2></a>
+        </div>
+        
+        <div id="NavBarMovil" class="navBarMovil">
+            <a href="" class="opcionNavBarMovil">Sobre mí</a>
+            <a href="" class="opcionNavBarMovil">Formación</a>
+            <a href="" class="opcionNavBarMovil">Contacto</a>
         </div>
     </div>
     <div id="contenedorMain">
@@ -32,19 +48,21 @@
         <button id="botonDescarga"><img src="./icons/download-icon.png" alt="" class="iconoBoton"><a href="./downloadable archives/CV Alejandro López.pdf" download class="enlaceBoton">Descargar CV</a></button>
     </div>
     <div id="contenedorInfoPrincipal">
-        <div id="contenedorFoto">
-            <img src="./images/FotoAlex.jpeg" alt="Fotografía identificativa Alejandro López" id="imagenAlex">
-        </div>
-        <div id="parrafoTexto">
-            <p>
-                Hola!
-                <br>
-                <br>
-                Mi nombre es Alejandro López Carro, y soy técnico superior en Desarrollo de Aplicaciones Web.
-                <br>
-                <br>
-                Soy programador fullstack, pero tengo tendencia a centrarme en el FrontEnd, aunque siempre estoy dispuesto a aprender y trabajar en nuevos ámbitos, con el fin de mejorar y optar a nuevas oportunidades.
-            </p>
+        <div id="contenedorParrafoPrincipal">
+            <div id="contenedorFoto">
+                <img src="./images/FotoAlex.jpeg" alt="Fotografía identificativa Alejandro López" id="imagenAlex">
+            </div>
+            <div id="parrafoTexto">
+                <p>
+                    Hola!
+                    <br>
+                    <br>
+                    Mi nombre es Alejandro López Carro, y soy <strong>técnico superior en Desarrollo de Aplicaciones Web.</strong>
+                    <br>
+                    <br>
+                    Soy programador <strong>fullstack</strong>, pero tengo tendencia a centrarme en el FrontEnd, aunque <strong>siempre estoy dispuesto a aprender y trabajar en nuevos entornos</strong>, con el fin de mejorar y optar a nuevas oportunidades.
+                </p>
+            </div>
         </div>
         <div id="contenedorMasInformacion">
             <img src="./icons/flecha-abajo-icon.png" alt="Icono de una flecha blanca hacia abajo" id="iconoFlechaMasInfo">
@@ -54,34 +72,36 @@
         </div>
     </div>
     <div id="divSeparador"></div>
-    <h2 id="tecnologiasAprendidas">Tecnologías aprendidas</h2>
+    <h2 id="tecnologiasAprendidas">Experiencia en tecnologías</h2>
     <p id="textoTecnologias">Estas son las tecnologías que he aprendido gracias a mi formación y a mis proyectos personales</p>
     <div id="contenedorTecnologias">
         <div class="cuadroTecnologia">
             <h3>BackEnd</h3>
             <div class="tecnologias" id="backend">
-                <img src="./icons/java-icon.png" alt="">
-                <img src="./icons/csharp-icon.svg" alt="">
+                <img src="./icons/java-icon.png" alt="Logo de Java">
+                <img src="./icons/csharp-icon.svg" alt="Logo de C#">
             </div>
         </div>
         <div class="cuadroTecnologia">
             <h3>FrontEnd</h3>
             <div class="tecnologias" id="frontend">
-                <img src="./icons/html5-icon.png" alt="">
-                <img src="./icons/css3-icon.png" alt="">
-                <img src="./icons/js-icon.png" alt="">
+                <img src="./icons/html5-icon.png" alt="Logo de HTML-5">
+                <img src="./icons/css3-icon.png" alt="Logo de CSS-3">
+                <img src="./icons/js-icon.png" alt="Logo de JavaScript">
             </div>
         </div>
         <div class="cuadroTecnologia">
             <h3>Frameworks</h3>
             <div class="tecnologias" id="frameworks">
-                <img src="./icons/spring-icon.svg" alt="">
+                <img src="./icons/spring-icon.svg" alt="Logo de Spring Framework">
+                <img src="./icons/bootstrap-icon.png" alt="Logo de Spring Framework">
+                <img src="./icons/tailwind-icon.svg" alt="Logo de Tailwind">
             </div>
         </div>
         <div class="cuadroTecnologia">
             <h3>Tecnologías</h3>
             <div class="tecnologias" id="controlVersiones">
-                <img src="./icons/github-icon.png" alt="">
+                <img src="./icons/github-icon.png" alt="Logo de GitHub">
             </div>
         </div>
         

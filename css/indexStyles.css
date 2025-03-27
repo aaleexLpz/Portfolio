@@ -3,10 +3,12 @@
 }
 
 body {
-    background: linear-gradient(to right, #0D0F2E -20%, #1F2377 120%);
+    background: linear-gradient(to right, #0d0f2e -20%, #1F2377 100%);
     margin: 0 auto;
-    background-size: 300% 300%;
-    animation: gradientAnimation 10s ease-in-out infinite;
+    width: 100%;
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease-in-out infinite;
+    overflow-x: hidden;
 }
 
 #contenedorNavBar {
@@ -21,6 +23,10 @@ body {
     left: 0; 
     width: 100%;
     z-index: 1000;
+}
+
+#contenedorNavBarMovil {
+    display: none;
 }
 
 #contenedorTitulo {
@@ -96,13 +102,14 @@ h2 {
 }
 
 #contenedorInfoPrincipal {
-    margin: 0 auto;
-    margin-left: 17vw;
     width: fit-content;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: center;
+}
+
+#contenedorParrafoPrincipal {
+    display: flex;
     align-items: center;
+    padding-left: 20vw;
+    gap: 70px;
 }
 
 #parrafoTexto {
@@ -115,9 +122,10 @@ h2 {
 }
 
 #contenedorBotones {
-    margin-left: 35vw;
     margin-bottom: 5vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -205,12 +213,12 @@ h2 {
 
 #contenedorMasInformacion {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 28vw;
     margin-top: 10vh;
-    width: 10vw;
     padding-bottom: 60px;
+    margin-left: 25vw;
 }
 
 #iconoFlechaMasInfo {
@@ -218,11 +226,19 @@ h2 {
     animation: bounce 2s infinite;
 }
 
+#iconoFlechaMasInfo:hover {
+    cursor: pointer;
+}
+
 #masInfoTxt {
     color: white;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 14pt;
+}
+
+#masInfoTxt:hover {
+    cursor: pointer;
 }
 
 #divSeparador {
@@ -250,7 +266,7 @@ h2 {
     display: grid;
     grid-template-columns: 30% 30%;
     justify-content: center;
-    gap: 60px;
+    gap: 100px;
     margin-bottom: 10vh;
 }
 
@@ -307,7 +323,7 @@ h2 {
 
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    50% { background-position: 50% 50%; }
     100% { background-position: 0% 50%; }
 }
 
@@ -319,3 +335,4 @@ h2 {
         transform: translate(-50%, -10px);
     }
 }
+
