@@ -49,10 +49,10 @@ h2 {
 
 #NavBar {
     margin-left: 22vw;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
+    display: flex;
+    justify-content: end;
     width: 22vw;
-    gap: 2vw;
+    gap: 3vw;
 }
 
 .opcionNavBar {
@@ -98,7 +98,7 @@ h2 {
 #imagenAlex {
     width: 150px;
     border-radius: 50%;
-    border: 2px solid white;
+    box-shadow: 4px 4px 10px black;
 }
 
 #contenedorInfoPrincipal {

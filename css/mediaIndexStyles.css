@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) and (max-width: 1400px){
+@media screen and (min-width: 1000px) and (max-width: 1400px){
     body {
         width: 100vh;
         overflow-x: hidden;
@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 899px) {
+@media screen and (min-width: 300px) and (max-width: 999px) {
     body {
         background-size: 200% 200%;
         animation: gradientAnimation 3s ease-in-out infinite;
@@ -144,10 +144,10 @@
 
     #linkTituloMovil {
         flex-grow: 1;
-        text-align: center;
         margin-top: 2vh;
         margin-left: -7vw;
         text-decoration: none;
+        text-align: center;
     }
 
     #contenedorMain {
@@ -185,9 +185,8 @@
     }
 
     #imagenAlex {
-        width: 120px;
+        width: 150px;
         border-radius: 50%;
-        border: 2px solid white;
     }
 
     #contenedorTecnologias {
@@ -235,5 +234,14 @@
 
     body {
         overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 724px) and (max-width: 999px) {
+    #contenedorTecnologias {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 50px;
+        margin-top: 5vh;
     }
 }
