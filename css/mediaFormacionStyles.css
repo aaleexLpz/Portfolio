@@ -1,0 +1,66 @@
+@media screen and (min-width: 900px){
+    #contenedorNavBarMovil {
+        display: none;
+    }
+
+    #contenedorNavBar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        height: fit-content;
+        margin-top: 0vh;
+        background-color: #0a0a1c62;
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #contenedorTitulo {
+        width: fit-content;
+        height: 10vh;
+        margin-left: 2vw;
+    }
+    
+    h2 {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 32pt;
+        color: white;
+        margin-top: 2vh;
+    }
+    
+    #linkTitulo {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #NavBar {
+        margin-left: 22vw;
+        display: flex;
+        justify-content: end;
+        width: 22vw;
+        gap: 3vw;
+    }
+    
+    #contenedorMainMovil {
+        margin-top: 12vh;
+    }
+
+    .parrafoInicio {
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    .opcionNavBar {
+        font-size: 16pt;
+        width: fit-content;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #e5e5e5a1;
+    }
+
+    .iframeMapa {
+        height: 300px;
+    }
+}

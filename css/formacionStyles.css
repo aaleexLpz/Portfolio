@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(to right, #0d0f2e -20%, #1F2377 100%);
+    margin: 0;
+    width: 100%;
+    padding-bottom: 5vh;
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease-in-out infinite;
+    overflow-x: hidden;
+}
+
+#contenedorNavBarMovil {
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedorNavBar {
+    display: none;
+}
+
+#contenedorMenuMovil {
+    display: flex;
+    justify-content: start;
+}
+
+#contenedorTituloMovil {
+    display: flex;
+    width: 100%;
+    background-color: #0a0a1c62;
+    align-items: center;
+    /* padding: 20px 0; */
+}
+
+.menuToggle {
+    height: fit-content;
+    background-color: #ffffff00;
+    padding: 0;
+    border: none;
+}
+
+#iconoMenu {
+    width: 35px;
+}
+
+#contenedorLinkTituloMovil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#tituloDevAlex {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32pt;
+    color: white;
+}
+
+#NavBarMovil {
+    display: none;
+}
+
+#NavBarMovil.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0a1c62;
+} 
+
+.opcionNavBarMovil {
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 14pt;
+    line-height: 4vh;
+}
+
+#menuToggle {
+    z-index: 15;
+}
+
+#linkTituloMovil {
+    width: fit-content;
+    margin-left: -7vw;
+    text-decoration: none;
+    text-align: center;
+}
+
+#contenedorMainMovil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tituloFormacionMovil {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 33pt;
+    text-align: center;
+}
+
+.parrafoInicio {
+    width: 35vw;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    line-height: 3vh;
+    font-size: 16pt;
+    width: 70%;
+    text-align: center;
+}
+
+.mapa {
+    width: 80%;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+}

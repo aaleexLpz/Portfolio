@@ -220,17 +220,19 @@
     }
 
     #contenedorTecnologias img {
-        display: flex;
-        justify-content: space-evenly;
-        width: 65px;
+        width: 75px;
     }
 
     .tecnologias {
-        height: 200px;
-        width: 200px;
+        display: flex
+        justify-content: center;
+        gap: 20px;
+        height: 250px;
+        width: 250px;
     }
 
-
+    .tecnologias img {
+    }
 
     body {
         overflow-x: hidden;
