@@ -42,15 +42,6 @@
         width: 22vw;
         gap: 3vw;
     }
-    
-    #contenedorMainMovil {
-        margin-top: 12vh;
-    }
-
-    .parrafoInicio {
-        margin-top: 2vh;
-        margin-bottom: 1vh;
-    }
 
     .opcionNavBar {
         font-size: 16pt;
@@ -64,8 +55,7 @@
         color: rgba(255, 255, 255, 0.76);
     }
 
-    .iframeMapa {
-        height: 300px;
+    #contenedorMainMovil {
+        display: none;
     }
-
 }

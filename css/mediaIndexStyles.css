@@ -224,14 +224,11 @@
     }
 
     .tecnologias {
-        display: flex
+        display: flex;
         justify-content: center;
         gap: 20px;
         height: 250px;
         width: 250px;
-    }
-
-    .tecnologias img {
     }
 
     body {

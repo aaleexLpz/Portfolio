@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | DevAlex</title>
+    <link rel="stylesheet" href="../css/contactoStyles.css">
+    <link rel="stylesheet" href="../css/mediaContactoStyles.css">
+    <link rel="shortcut icon" href="./icons/favicon-DA.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="contenedorNavBarMovil">
+        <div id="contenedorTituloMovil">
+            <div id="contenedorMenuMovil">
+                <div id="menuToggle" class="menuToggle"><img src="./icons/menu-icon.png" alt="" id="iconoMenu"></div>
+            </div>
+            <div id="contenedorLinkTituloMovil">
+                <a href="index.html" id="linkTituloMovil"><h2 id="tituloDevAlex">DevAlex</h2></a>
+            </div>
+        </div>
+        
+        <div id="NavBarMovil" class="navBarMovil">
+            <a href="index.html" class="opcionNavBarMovil">Inicio</a>
+            <a href="formacion.html" class="opcionNavBarMovil">Formación</a>
+        </div>
+    </div>
+
+    <!-- NavBar para escritorio -->
+    <div id="contenedorNavBar">
+        <div id="contenedorTitulo">
+            <a href="index.html" id="linkTitulo"><h2>DevAlex</h2></a>
+        </div>
+        <div id="NavBar">
+            <a href="index.html" class="opcionNavBar">Inicio</a>
+            <a href="formacion.html" class="opcionNavBar">Formación</a>
+        </div>
+    </div>
+
+    <div id="contenedorMainMovil">
+        <div id="contenedorFormularioMovil">
+            <form action="" id="formularioContacto">
+                <div>
+                    <label for="inputNombre">Nombre:</label>
+                    <input type="text" name="nombre" id="inputNombre">
+                </div>
+                <div>
+                    <label for="inputCorreo">Correo Electrónico</label>
+                    <input type="email" name="correo" id="inputCorreo">
+                </div>
+                <div>
+                    <label for="inputMensaje">Mensaje</label>
+                    <input type="text" name="mensaje" id="inputMensaje">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
