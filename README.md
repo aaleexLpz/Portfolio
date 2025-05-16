@@ -29,7 +29,6 @@ Algunas de las tecnologías con las que trabajo incluyen:
 ## 📬 Contacto
 Si quieres saber más sobre mí o colaborar en algún proyecto, puedes contactarme a través de:
 
-- 🌍 [Tu sitio web/portafolio](https://tusitioweb.com)
 - 📧 Mail: alejandrolc2003@gmail.com
 - 💼 LinkedIn: https://www.linkedin.com/in/alejandro-l%C3%B3pez-carro-4a10a831b/
 
